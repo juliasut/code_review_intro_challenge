@@ -8,5 +8,4 @@ const charactersWithKnownBirthDate = () => {
   return characterWithKnownBirthDate;
 };
 
-console.log(charactersWithKnownBirthDate())
 module.exports = charactersWithKnownBirthDate;
