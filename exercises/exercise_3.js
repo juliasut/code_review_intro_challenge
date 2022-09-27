@@ -4,9 +4,9 @@ const characters = require('../data/characters.json');
 // their height is between 180 and 200
 
 const charactersWithMediumHeight = () => {
-  const MIN_HEIGHT = 0;
-  const MAX_HEIGHT = 300;
-  return characters.filter(({height}) => height > 180 && height < 200);
+  const MIN_HEIGHT = 180;
+  const MAX_HEIGHT = 200;
+  return characters.filter(({height}) => height > MIN_HEIGHT && height < MAX_HEIGHT);
 };
 
 module.exports = charactersWithMediumHeight;
